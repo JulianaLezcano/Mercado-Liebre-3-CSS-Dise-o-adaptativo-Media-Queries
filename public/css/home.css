@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    /* colores */
+    --color-amarillo : #EAC926;
+    --color-azul : #03264C;
+    --color-celeste : #1259c3;
+    --color-gris-oscuro: #666;
+    --color-gris-claro: #ebebeb;
+    --color-verde: #39b54a;
+    /* fuentes */
+    --font-roboto: 'Roboto', sans-serif;
+    /* tamaños */
+    --font-tamaño-cuerpo: 12px;
+    --font-tamaño-titulares: 24px;
+    --font-tamaño-precios: 18px;
+    --font-tamaño-dtos-desc: 16px;
+}
+/* es una seudoclase que sirve para declarar todas las  variables que despues vamos a poder acceder desde nuestro css */
+
+
+/* general */
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    box-sizing: border-box;
+    background-color: var(--color-gris-claro);
+    font-family: var(--font-roboto);
+    font-size: var(--font-tamaño-cuerpo);   
+}
+li{
+    list-style: none;
+    /* los circulitos de la lita no se ven pero estan asique por las dudas las sacamos */
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+
+/*desglozamiento  */
+header{
+    background-color:var(--color-amarillo);
+    padding-bottom: 10px;
+}
+header .logo{
+    width: 135px;
+    height: 50px;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+header .search{
+    margin-left: 10px;
+    
+}
+header .icon-search{
+    margin-left: 10px;
+}
+
+/* consejo del profe para class repetido
+.ml-15{
+    margin-left:15px;
+ } */
+
+header p{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+header nav{
+    display: none;
+    margin-left: 10px;
+}
+header .burger-menu{
+    background-color: var(--color-celeste);
+    width: 30px;
+    height: 26px;
+    text-align: center;
+    color: var(--color-gris-claro);
+    margin: 20px auto 10px auto;
+    padding: 5px;
+    border-radius: 5px;
+}
+header .burger-menu i{
+font-size: 20px;
+text-align: center;
+}
+.banner{
+    width: 100%;
+}
+main{
+    margin:0  auto;
+width: 90%;
+
+}
+main h2{
+    color: var(--color-gris-oscuro);
+    text-align: center;
+    font-size: var(--font-tamaño-titulares);
+    margin: 20px auto
+}
+main article{
+    margin-bottom: 10px;
+}
+main article img{
+margin: auto;
+width: 100%;
+}
+main article .box-detail{
+    background-color: white;
+    border-top: solid 1px #ebebeb;
+    padding: 15px
+}
+main article div i{
+    font-size: 15px;
+    border: solid 1px var(--color-verde);
+    color:var(--color-verde);
+    border-radius: 50%;
+    padding: 10px;
+    
+}
+main article div p{
+    font-size: var(--font-tamaño-precios);
+}
+main article div .dto{
+    color: var(--color-verde);
+    font-size: var(--font-tamaño-dtos-desc);
+    margin-bottom: 15px;
+}
+main article div h3{
+    display: none;
+    opacity: 0.4;
+}
+
+footer{
+text-align: center;
+}
+footer section i{
+    color:var(--color-celeste) ;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+footer section h4{
+    font-size: var(--font-tamaño-dtos-desc);
+}
+footer section p{
+    margin-left: 50px;
+    margin-right: 50px;   
+    text-align:center;
+}
+.Copyright p{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    text-align: left;
+}
+
+
+
+/* tablet */
+@media (min-width: 361px) {
+    header nav{
+        display:block
+        }
+    main article{
+        box-shadow: 0 0 10px rgb(100, 100, 100);
+    }
+    main article div h3{
+        display: block;
+    }
+     .burger-menu{
+         display: none;
+     }
+     header .logo{
+         width: 250px;
+         height: 90px;
+     }
+}
+
+
+
