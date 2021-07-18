@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "name": "mercado-liebre-3-css-media-queries",
+  "version": "1.0.0",
+  "description": "Version de ML en el cual se aplica los conocimientos basicos aprendidos de CSS ",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulianaLezcano/Mercado-Liebre-3-CSS-Dise-o-adaptativo-Media-Queries.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JulianaLezcano/Mercado-Liebre-3-CSS-Dise-o-adaptativo-Media-Queries/issues"
+  },
+  "homepage": "https://github.com/JulianaLezcano/Mercado-Liebre-3-CSS-Dise-o-adaptativo-Media-Queries#readme"
 }
